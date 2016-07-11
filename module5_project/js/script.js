@@ -116,7 +116,10 @@ function buildAndShowHomeHTML (categories) {
       // it into the home html snippet.
       // 
 
-      var special = "" + chosenCategoryShortName.short_name; 
+      // Tried to add quotes to the chosen category short name as it appears in home-snippet.html, but unsure of syntax; below not working.
+      // var special = '' + chosenCategoryShortName.short_name; 
+
+      var special = chosenCategoryShortName.short_name; 
       var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", special);
     
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
